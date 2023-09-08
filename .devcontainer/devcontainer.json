@@ -1,14 +1,20 @@
 
 //https://github.com/microsoft/vscode-dev-containers/blob/main/containers/codespaces-linux/.devcontainer/devcontainer.json
 
-
-
 {
 	"name": "GitHub Codespaces (Default)",
 
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": { 
+		  "installCudnn": true
+		},
+
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	  },
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -65,9 +71,6 @@
 	// "forwardPorts": [],
 
 	// "oryx build" will automatically install your dependencies and attempt to build your project
-	"postCreateCommand": "virtualenv ~/.venv && echo 'source ~/.venv/bin/activate' >> ~/.bashrc && make install",
-	"features": {
-		"ghcr.io/devcontainers/features/azure-cli:1": {}
-	}
+	"postCreateCommand": "virtualenv ~/.venv && echo 'source ~/.venv/bin/activate' >> ~/.bashrc && make install"
 	
 }
