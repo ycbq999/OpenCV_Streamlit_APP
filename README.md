@@ -28,3 +28,5 @@ Try to make an online application with Streamlit App combined with modern vision
 
 ## Later we will use azure to train and deploy the model. 
 
+-reference [https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-train-model?view=azureml-api-2]
+
