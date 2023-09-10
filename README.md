@@ -14,8 +14,12 @@ Try to make an online application with Streamlit App combined with modern vision
 - first setting all up and activate your virtual environment
 - then choose file --> Preference -->settings  select workspace tab then click open setting json icon from top right
 - put this code in
+
+
     {
         "python.terminal.activateEnvInCurrentTerminal": true
     }
-[https://www.youtube.com/watch?v=g7bg2ADfx4c&ab_channel=JohnSolly]
+
+
+- see reference [https://www.youtube.com/watch?v=g7bg2ADfx4c&ab_channel=JohnSolly]
 
