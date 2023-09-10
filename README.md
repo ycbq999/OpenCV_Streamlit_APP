@@ -23,3 +23,8 @@ Try to make an online application with Streamlit App combined with modern vision
 
 - see reference [https://www.youtube.com/watch?v=g7bg2ADfx4c&ab_channel=JohnSolly]
 
+
+## We will first use google colab to train the model 
+
+## Later we will use azure to train and deploy the model. 
+
