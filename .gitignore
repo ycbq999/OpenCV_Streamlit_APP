@@ -1,4 +1,5 @@
-data_images
+1_DataPreparation/data_images/*
 .vscode
 Conversion.png
 file_from_udemy
+2_DataPredictions/Model-20230912T015322Z-001.zip
