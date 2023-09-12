@@ -10,7 +10,7 @@ matplotlib
 opencv-python
 jupyter
 labelImg
-functools
+PyYAML
 
 #fastapi==0.85.0
 #uvicorn==0.18.3
