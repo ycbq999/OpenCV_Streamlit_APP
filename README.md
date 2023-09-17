@@ -34,6 +34,15 @@ Try to make an online application with Streamlit App combined with modern vision
 - see reference [https://www.youtube.com/watch?v=g7bg2ADfx4c&ab_channel=JohnSolly]
 
 
+## Streamlit 
+
+- I include stream tutorial folder called 3_Streamlit_crash_course
+
+- Streamlit treats multiple apps as pages, you need to make a fold named "pages" exactly to activate this feature. also name 1_,2_,--- infront of each page name so it will detect sequence. Remember that
+
+see reference in udemy [https://www.udemy.com/course/yolo-custom-object-detection/learn/lecture/33903494#notes]
+
+
 ## We will first use google colab to train the model 
 
 
