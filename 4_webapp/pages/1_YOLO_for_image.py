@@ -4,9 +4,6 @@ from PIL import Image
 import numpy as np
 
 
-
-
-
 st.set_page_config(page_title="YOLO Object Detection App",    
                     page_icon="./images/object.png",    
                     layout="wide")
@@ -63,13 +60,16 @@ def main():
             st.json(object['details'])
             button = st.button('Get Detection from yolo')
             if button:
-                #below command will convert object to numpy array
-                image_array = np.array(image_obj)
-                pred_img = yolo.predictions(image_array)
-                pred_img_obj = Image.fromarray(pred_img)
-                prediction = True
+                with st.spinner("""Detecting Objects..."""):
+                    #below command will convert object to numpy array
+                    image_array = np.array(image_obj)
+                    pred_img = yolo.predictions(image_array)
+                    pred_img_obj = Image.fromarray(pred_img)
+                    prediction = True
 
         if prediction:
+            st.subheader("Predicted Image")
+            st.caption("YOLO Object Detection")
             st.image(pred_img_obj)
 
 

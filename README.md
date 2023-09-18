@@ -42,6 +42,14 @@ Try to make an online application with Streamlit App combined with modern vision
 
 see reference in udemy [https://www.udemy.com/course/yolo-custom-object-detection/learn/lecture/33903494#notes]
 
+## Web Video Streaming
+
+- you need to install webrtc library to work on video stream project
+
+- streamlit has streamlit-webrtc so you just need to install it from requirement txt.
+
+- Reference [https://github.com/whitphx/streamlit-webrtc]
+
 
 ## We will first use google colab to train the model 
 
@@ -60,4 +68,15 @@ see reference in udemy [https://www.udemy.com/course/yolo-custom-object-detectio
 
 
 -reference [https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-train-model?view=azureml-api-2]
+
+-webrtc may not work in this environment due the security on the network. but still can deploy for image object detection.
+
+    HTTPS
+    streamlit-webrtc uses getUserMedia() API to access local webcams, and this method does not work in an insecure context.
+
+    This document says
+
+    A secure context is, in short, a page loaded using HTTPS or the file:/// URL scheme, or a page loaded from localhost.
+
+    So, when hosting your app on a remote server, it must be served via HTTPS.
 

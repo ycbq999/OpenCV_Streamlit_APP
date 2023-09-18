@@ -11,6 +11,7 @@ opencv-python
 jupyter
 labelImg
 PyYAML
+streamlit-webrtc
 
 #fastapi==0.85.0
 #uvicorn==0.18.3
