@@ -30,7 +30,8 @@ Try to make an online application with Streamlit App combined with modern vision
 
 
     {
-        "python.terminal.activateEnvInCurrentTerminal": true
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "python.defaultInterpreterPath": "/home/ycbq999/face_recognition_venv/bin/python"
     }
 
 
